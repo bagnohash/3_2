@@ -10,7 +10,17 @@
     <div>
       <button id="load">Pobierz stacje</button>
       <button id="loadLocations">Pobierz lokalizacje</button>
+      <button id="loadData">Pobierz dane</button>
     </div>
+
+    <div id="dataParams">
+      <label>datasetid <input id="datasetid" value="GHCND"></label>
+      <label>locationid <input id="locationid" value="ZIP:28801"></label>
+      <label>startdate <input id="startdate" type="date" value="2010-05-01"></label>
+      <label>enddate <input id="enddate" type="date" value="2010-05-01"></label>
+    </div>
+
+    <p id="error" class="hidden"></p>
 
     <div id="answer">
       <table id="stationsTable" class="hidden">
@@ -37,6 +47,20 @@
           </tr>
         </thead>
         <tbody id="locations">
+        </tbody>
+      </table>
+
+      <table id="dataTable" class="hidden">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Datatype</th>
+            <th>Station</th>
+            <th>Value</th>
+            <th>Attributes</th>
+          </tr>
+        </thead>
+        <tbody id="dataResults">
         </tbody>
       </table>
     </div>
