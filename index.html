@@ -9,10 +9,11 @@
   <body>
     <div>
       <button id="load">Pobierz stacje</button>
+      <button id="loadLocations">Pobierz lokalizacje</button>
     </div>
 
     <div id="answer">
-      <table>
+      <table id="stationsTable" class="hidden">
         <thead>
           <tr>
             <th>Station ID</th>
@@ -22,6 +23,20 @@
           </tr>
         </thead>
         <tbody id="results">
+        </tbody>
+      </table>
+
+      <table id="locationsTable" class="hidden">
+        <thead>
+          <tr>
+            <th>Location ID</th>
+            <th>Name</th>
+            <th>Min Date</th>
+            <th>Max Date</th>
+            <th>Data Coverage</th>
+          </tr>
+        </thead>
+        <tbody id="locations">
         </tbody>
       </table>
     </div>
